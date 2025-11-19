@@ -6,10 +6,10 @@ import ConsumerDetail from "./pages/consumer/ConsumerDetail";
 import CreateDealer from "./pages/dealer/CreateDealer";
 import DealerDetail from './pages/dealer/DealerDetail';
 import ListDealers from './pages/dealer/ListDealers';
-import SignUp from './pages/auth/SignUp';
-import Login from './pages/auth/Login';
+// import SignUp from './pages/auth/SignUp';
+// import Login from './pages/auth/Login';
 import Dashboard from './pages/consumer/Dashboard';
-import AuthLayout from './pages/auth/AuthLayout';
+// import AuthLayout from './pages/auth/AuthLayout';
 import { AuthProvider } from './context/useAuth';
 
 const App = () => {
@@ -27,10 +27,10 @@ const App = () => {
         <Route path="/dealers" element={<ListDealers/>} />
         <Route path="/dealer/:id" element={<DealerDetail />} />
         
-        <Route path='auth' element={<AuthLayout />}>
+        {/* <Route path='auth' element={<AuthLayout />}>
         <Route index element={<Login />} />
         <Route path="signup" element={<SignUp />} />
-        </Route>
+        </Route> */}
 
       </Routes>
     </div>
