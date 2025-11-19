@@ -35,7 +35,7 @@ const CreateDealer = () => {
         alternativePhone
       });
       toast.success("Dealer Created Successfully!");
-      navigate("/dashboard");
+      navigate("/");
     } catch (error) {
       console.log("Error Creating Dealer!", error.message);
       if (error.response.status === 429) {

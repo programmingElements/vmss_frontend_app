@@ -64,7 +64,7 @@ const CreateConsumer = () => {
         reference,
       });
       toast.success("Loan Created Successfully!");
-      navigate("/dashboard");
+      navigate("/");
     } catch (error) {
       console.log(error);
       console.log("Error Creating Loan!", error.message);

@@ -17,7 +17,7 @@ const App = () => {
     <AuthProvider>
     <div className='relative w-full h-full' data-theme="forest">
       <Routes>
-        <Route path="dashboard" element={<Dashboard />}>
+        <Route path="" element={<Dashboard />}>
           <Route index element={<Home />} />
           <Route path="create_consumer" element={<CreateConsumer />} />
           <Route path="consumer/:id" element={<ConsumerDetail />} />
